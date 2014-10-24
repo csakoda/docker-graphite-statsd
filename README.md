@@ -3,7 +3,12 @@ docker-graphite-statsd
 ## Quick Start
 
 ```sh
-sudo docker run -d \
+docker build -t csakoda/graphite-statsd .
+```
+
+
+```sh
+docker run -d \
   -p 80:80 \
   -p 2003:2003 \
   -p 2003:2003/udp \
