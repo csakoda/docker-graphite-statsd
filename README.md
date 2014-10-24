@@ -13,5 +13,6 @@ docker run -d \
   -p 2003:2003 \
   -p 2003:2003/udp \
   -p 8125:8125/udp \
+  -e CARBON_UDP_ENABLED=False
   csakoda/graphite-statsd
 ```
