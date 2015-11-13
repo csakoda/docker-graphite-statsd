@@ -1,0 +1,11 @@
+graphite-statsd:
+  image: csakoda/graphite-statsd
+#  build: .
+  ports:
+    - 80:80
+    - 2003:2003
+    - 2003:2003/udp
+    - 8125:8125/udp
+  volumes:
+    - /data/graphite:/opt/graphite/storage/whisper
+
